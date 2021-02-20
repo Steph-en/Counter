@@ -1,0 +1,93 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(backg.jpg);
+}
+
+#container
+{
+    height: 600px;
+    width: 500px;
+    background-image: url(backg.jpg);
+    border: 2px solid #e2ebf4;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+#container h2
+{
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#container h1
+{
+    width: 123px;
+    height: 127px;
+    text-align: center;
+    font-size: 170px;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    color: red; 
+}
+
+#buttons
+{
+    height: 50px;
+    width: 260px;
+    position: absolute;
+    bottom: 8%;
+    left: 70px;
+    margin-bottom: 110px;
+}
+
+#buttons button
+{
+    background: #042249;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+#lowerCount
+{
+    margin-left: 106px;
+    height: 50px;
+    width: 150px;
+}
+
+#addCount
+{
+    margin-left: 122px;
+    height: 50px;
+    width: 120px;
+    top: 70px;
+}
+
+#buttons button:hover
+{
+    background-color: #042a5c;
+}
