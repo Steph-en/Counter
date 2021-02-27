@@ -9,7 +9,10 @@ addCount.addEventListener
     "click" , ()=> 
     {
         counter++;
-        counterValue.innerText = counter;  
+        counterValue.innerText = counter; 
+        if (counterValue > 0) {
+            document.getElementById('addCount').style.color = "green";
+        } 
     }
 );
 
@@ -19,6 +22,9 @@ lowerCount.addEventListener
     {
         counter--;
         counterValue.innerText = counter;  
+        if (counterValue < 0) {
+            document.getElementById('lowerCount').style.color = "reed";
+        } 
     }
 );
 
