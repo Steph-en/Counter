@@ -6,7 +6,7 @@ let counter = 0;
 
 addCount.addEventListener
 (
-    "click" , ()=>
+    "click" , ()=> 
     {
         counter++;
         counterValue.innerText = counter;  
@@ -21,3 +21,4 @@ lowerCount.addEventListener
         counterValue.innerText = counter;  
     }
 );
+
