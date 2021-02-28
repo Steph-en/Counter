@@ -10,9 +10,16 @@ addCount.addEventListener
     {
         counter++;
         counterValue.innerText = counter; 
-        if (counterValue > 0) {
-            document.getElementById('addCount').style.color = "green";
-        } 
+
+        if(counter > 0)
+        {
+            counterValue.style.color = "green";
+        }
+        
+        else if(counter == 0)
+        {
+            counterValue.style.color = "black";
+        }
     }
 );
 
@@ -21,10 +28,17 @@ lowerCount.addEventListener
     "click" , ()=>
     {
         counter--;
-        counterValue.innerText = counter;  
-        if (counterValue < 0) {
-            document.getElementById('lowerCount').style.color = "reed";
-        } 
+        counterValue.innerText = counter; 
+
+        if(counter < 0)
+        {
+            counterValue.style.color = "red";
+        }
+        
+        else if(counter == 0)
+        {
+            counterValue.style.color = "black";
+        }
     }
 );
 
