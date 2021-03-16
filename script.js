@@ -10,16 +10,7 @@ addCount.addEventListener
     {
         counter++;
         counterValue.innerText = counter; 
-
-        if(counter > 0)
-        {
-            counterValue.style.color = "green";
-        }
-        
-        else if(counter == 0)
-        {
-            counterValue.style.color = "black";
-        }
+        changeColor();
     }
 );
 
@@ -28,17 +19,26 @@ lowerCount.addEventListener
     "click" , ()=>
     {
         counter--;
-        counterValue.innerText = counter; 
+        counterValue.innerText = counter;
+        changeColor();
+    }
+);
 
-        if(counter < 0)
+
+changeColor = () =>
+{
+    if(counter > 0)
+        {
+            counterValue.style.color = "green";
+        }
+    
+    else if(counter < 0)
         {
             counterValue.style.color = "red";
         }
         
-        else if(counter == 0)
+    else
         {
             counterValue.style.color = "black";
         }
-    }
-);
-
+}
